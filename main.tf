@@ -5,7 +5,7 @@
 # Enterprise-scale and provide a base configuration.
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "~> 1.0.0"
+  version = "6.1.0"
 
   providers = {
     azurerm              = azurerm
@@ -20,8 +20,9 @@ module "enterprise_scale" {
   default_location = local.default_location
 
   # Control deployment of the core landing zone hierachy.
-  deploy_core_landing_zones   = true
+  deploy_core_landing_zones   = local.deploy_core_landing_zones
   deploy_corp_landing_zones   = local.deploy_corp_landing_zones
   deploy_online_landing_zones = local.deploy_online_landing_zones
   deploy_sap_landing_zones    = local.deploy_sap_landing_zones
-}
+
+

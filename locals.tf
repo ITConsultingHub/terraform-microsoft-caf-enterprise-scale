@@ -8,6 +8,7 @@ locals {
   root_id                        = var.root_id
   root_name                      = var.root_name
   default_location               = var.default_location
+  deploy_core_landing_zones      = var.deploy_core_landing_zones
   deploy_corp_landing_zones      = var.deploy_corp_landing_zones
   deploy_online_landing_zones    = var.deploy_online_landing_zones
   deploy_sap_landing_zones       = var.deploy_sap_landing_zones

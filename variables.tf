@@ -39,6 +39,13 @@ variable "default_location" {
   description = "Sets the default location for resources, including references to location within Policy templates."
 }
 
+variable "deploy_core_landing_zones" {
+  type        = bool
+  default     = false
+  description = "If set to true, will deploy the core landing zones in addition to any custom landing zones."
+  
+}
+
 variable "deploy_corp_landing_zones" {
   type        = bool
   default     = false
@@ -74,3 +81,4 @@ variable "security_contact_email_address" {
   default     = "security.contact@replace_me"
   description = "Sets the security contact email address used when configuring Azure Security Center."
 }
+
