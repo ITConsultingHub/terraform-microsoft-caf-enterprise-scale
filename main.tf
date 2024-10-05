@@ -25,4 +25,4 @@ module "enterprise_scale" {
   deploy_online_landing_zones = local.deploy_online_landing_zones
   deploy_sap_landing_zones    = local.deploy_sap_landing_zones
 
-
+}
